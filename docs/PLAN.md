@@ -191,8 +191,8 @@ It also stores only what backs a need, with the source. The report states that i
 
 | Phase | Scope | Done when |
 |---|---|---|
-| **1. Walking skeleton** | `plugin.json`, `marketplace.json`, the `start`, `brief`, `research`, `ideas` and `vision` skills, the four templates, the `scout` agent, and the Market playbook | One Market run goes from brief to `docs/input/vision.md`, and Itqan intake records the result as `vision` without questions |
-| **2. All types and rigor** | Company and Individual playbooks, the `skeptic` agent, `qns.mjs` (state and checks), the stage-order hook, `status` and `refresh` | Company and Individual runs pass `qns.mjs check`, and Itqan Discovery accepts `Mode: light` from the appendix |
+| **1. Walking skeleton (done, v0.1)** | `plugin.json`, `marketplace.json`, the `start`, `brief`, `research`, `ideas` and `vision` skills, the four templates, the `scout` agent, and the Market playbook | One Market run goes from brief to `docs/input/vision.md`, and Itqan intake records the result as `vision` without questions |
+| **2. All types and rigor (done, v0.2)** | Company and Individual playbooks, the `skeptic` agent, `qns.mjs` (state and checks), the stage-order hook, `status` and `refresh` | Company and Individual runs pass `qns.mjs check`, and Itqan Discovery accepts `Mode: light` from the appendix |
 | **3. Evals and publish** | `evals/` covering one market, one company and one person, plus no-web-access and stale-source cases. Also a README, `claude plugin validate --strict`, and a GitHub push and marketplace install test | The evals pass, and the plugin installs from GitHub on a clean machine |
 
 ## 8. Open points (defaults chosen, change them if you disagree)

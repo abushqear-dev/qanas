@@ -23,11 +23,14 @@ One numbered batch. Each question has a suggested default in brackets; skip any 
 
 If the target is vague ("something in healthcare"), propose two or three sharper framings and let the user pick one.
 
+**Company target:** ask for the website if not given; if the name is shared by several companies, ask which one.
+**Individual target:** ask for one link that identifies the person and the purpose of the research (for example "products for creators like her"). Say in one line that Qanas uses public sources only and never records private contact details, family, health, religion or political views.
+
 ## 3. Write
-1. Create `qanas/<yyyy-mm-dd>-<slug>/`.
+1. Run `node "${CLAUDE_PLUGIN_ROOT}/scripts/qns.mjs" new <type> <slug> "<target>"`. It creates the run folder and `state.json`.
 2. Write `qanas/profile.md` from the template if it is new or changed (set `Updated` to today).
-3. Write `00-brief.md` from the template. Quote the user's own words under "Notes from the user".
-4. Write `state.json` with `stage: 1` and all gates `null`.
+3. Write `00-brief.md` in the run folder from the template. Quote the user's own words under "Notes from the user". Leave "Comparable rule" for the research stage. For Individual runs, write the purpose under "Notes from the user".
+4. Run `qns.mjs check <run> brief` and fix any error, then `qns.mjs gate <run> brief`. The brief is the user's own answers, so their answers in this session pass this gate.
 
 ## 4. Hand off
 Say in one line what will be researched, then run `qanas:research`.

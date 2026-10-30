@@ -9,10 +9,11 @@ These are adapted from Ulwick's Outcome-Driven Innovation opportunity algorithm.
 ### Counting rules
 - Count **distinct documents and authors**, not signals. Three signals from one page are one place. The same announcement in two languages is one document.
 - Count only **first-hand** signals (voice `first-hand`) toward frequency and domains. A `relayed` signal (a vendor or consultant describing customers' pain) or a `vendor` signal (marketing, pricing, help pages) can support a need but cannot by itself make it recurring.
-- "Independent" means different sites and different authors, not one source quoting another.
+- A **place** is a domain. Many authors on one site (ten Trustpilot reviewers, a long forum thread) are one place, however many people wrote. Independent places are different domains, and one source quoting another is not independent.
+- Only signals with a content date of `YYYY-MM` or `live` count toward places. A signal dated `unknown` supports a need but cannot make it recurring or raise its confidence.
 
 ### Frequency
-- **Recurring:** the same need appears in 3+ independent places, or in 2 places at least a month apart.
+- **Recurring:** the same need appears in 3+ places, or in 2 places with signals at least a month apart.
 - **Concentrated:** everything else with 2 or more places, including 2 places with unknown timing, and any need that clusters in one thread, one site or one week.
 - **Isolated:** a single voice, however vivid. This is evidence, not a need, so it does not enter the Top needs table.
 - **No first-hand signals at all:** the need is concentrated at best, and the report says "no first-hand voice found".
@@ -43,7 +44,7 @@ Clamp the result to 1–10.
 | Most leaders do it adequately, per reviews | 7–8 |
 | Leaders do it well and complaints are rare | 9–10 |
 
-If no fetched page tells you what current alternatives do for this job, set Satisfaction to 5 and label it **Assumption**. Evidence from pricing and help pages (not reviews) supports a rating, but label it **Inference**. When reviews are scarce, say so.
+If no fetched page tells you what current alternatives do for this job, set Satisfaction to 5 and label it **Assumption**. If two searches in the users' words found no product at all, set it to 3 instead (same label) and list the two searches. Evidence from pricing and help pages (not reviews) supports a rating, but label it **Inference**. When reviews are scarce, say so.
 
 ### Opportunity
 `Opportunity = Importance + max(Importance − Satisfaction, 0)`, which ranges from 1 to 20.
@@ -76,5 +77,7 @@ Each axis is scored 1–5, with one line of reasoning each.
 | **Money** | No payer and no willingness-to-pay signal | Payer clear, price unproven | People already pay for a worse fix (a tool, a contractor, a salaried person) |
 
 The total is out of 25. Ties go to the idea whose need has higher confidence, because evidence is the dimension least likely to be wrong.
+
+**When nothing clears the floors,** that is a finding. A run whose needs are all Low confidence (Need score 2 at best) will rank no idea. The Idea List then says so on a line starting "No idea clears the floors", lists every idea under "Considered and killed", and the card offers the user the next step: reopen the needs gate to look for stronger evidence, with a list of the evidence that would help. No score is adjusted to make an idea rank, and the check refuses any Need score that departs from the formula.
 
 **Floors.** An idea ranks only if Need ≥ 3 and Gap ≥ 2 and its total is ≥ 15. Fit and Reach come from the builder profile, so they must not carry a weak need to the top: show **Evidence score** (Need + Gap + Money, out of 15) next to the total, and say so in the card when the top-ranked idea has a lower Evidence score than the runner-up.

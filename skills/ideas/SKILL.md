@@ -63,8 +63,13 @@ For each surviving idea, make these concrete:
 - No ranked idea breaks the brief's exclusions or the profile.
 - The kill list is present.
 
+## 5b. Nothing clears the floors
+If no idea survives the floors, do not adjust a score to make one rank. Write the Ranking section with the line "No idea clears the floors" followed by the reason (usually: every need is Low confidence), list every idea under "Considered and killed", and show the card. The card names the evidence that would lift the strongest needs (for example: first-hand voices from the buyer side, a second independent domain, dated job posts) and offers to reopen the needs gate (`qns.mjs reopen <run> needs`) for a second research round, or to stop the run here. The idea gate cannot pass without a ranked idea.
+
 ## 6. Gate: pick an idea
-Write `02-ideas.md`. Show a card with the ranking table, the pitch and biggest risk for the top three, and the kill list as one line per idea. Ask: "Which idea should become the Vision? Reply with an ID, IDs to combine, or 'another round' with what to change."
+Write `02-ideas.md`. Run `qns.mjs check <run> ideas` and the `qanas:skeptic` agent as the conventions say ("Before every gate"). Show a card with the ranking table, the pitch and biggest risk for the top three, and the kill list as one line per idea. Ask: "Which idea should become the Vision? Reply with an ID, IDs to combine, or 'another round' with what to change."
 
 - **Another round:** generate again with the user's direction. Keep the IDs already used.
-- **A pick:** set `picked`, record `gates.idea` as passed by the user today, set `stage` to 3, and run `qanas:vision`.
+- **A pick:** run `qns.mjs gate <run> idea IDEA-n` (or `IDEA-n+IDEA-m`), then run `qanas:vision`.
+
+**Company and Individual runs:** an idea for a `company-specific` or `personal` need is a service or custom build sold to that one target; say so in its Form and Money lines. An idea for a `sector` or `role-wide` need can be a product sold to the target and its peers.

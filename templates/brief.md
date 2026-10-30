@@ -17,6 +17,9 @@ status: draft
 ## Notes from the user
 <Anything else the user said that should steer research. Quote it; do not paraphrase. If there is none, write "none".>
 
+## Framing
+<Company and Individual runs only; added during research from the playbook's step 1 (identity, business model or role, stated goals, peers with the queries used, their words). Market runs write "n/a: market run".>
+
 ## Comparable rule
 <Added during research. The exact queries and count used to choose current alternatives, written before looking.>
 - **Rule:** <queries and count>

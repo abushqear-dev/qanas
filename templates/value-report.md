@@ -8,6 +8,8 @@ status: draft
 
 > **Confirm this if:** the needs below are real, recurring problems for the people named, and the scores match the evidence. Trim any need you do not want ideas for.
 
+<Individual runs only, as the first line: "Contains personal data about <name>, from public sources, for <purpose from the brief>." Delete this note in other runs.>
+
 **Verdict:** <one or two sentences: is there real, underserved value here, or is this space mostly noise? Say if the evidence is thin.>
 
 Confirmed for ideas: <filled in at the gate: NEED-ids and date>
@@ -33,6 +35,7 @@ Confirmed for ideas: <filled in at the gate: NEED-ids and date>
 - **Satisfaction <n>/10:** <why: how today's alternatives fall short, with COMP-n and signal IDs>
 - **Frequency and confidence:** <recurring | concentrated>, <High | Medium | Low (hypothesis)>. <Independent domains, time span, source skew.>
 - **Fact / Inference:** <which statements above come straight from signals, which are your reading>
+- **Peer test and buyer** (Company and Individual runs): <company-specific | sector | personal | role-wide>, with the peers that show it (S-n). Buyer: <role and budget holder; tenders or not>.
 - **Willingness to pay:** <evidence people pay for workarounds, hire for it, or ask for a paid tool; or "no signal found">
 - **Evidence:** S-3, S-8, S-12
 

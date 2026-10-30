@@ -1,7 +1,7 @@
 {
   "name": "qanas",
   "displayName": "Qanas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Hunts for unmet needs in a market, a company or a person, turns them into ranked product ideas, and writes a Vision Document ready for Itqan.",
   "author": { "name": "Mohammed Abu-Shqear" },
   "license": "MIT",
