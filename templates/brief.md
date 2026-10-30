@@ -12,7 +12,6 @@ status: draft
 - **Geography:** <region or "global">
 - **Time frame:** <e.g. "evidence from the last 12 months">
 - **Exclusions:** <sectors, models or ideas already ruled out, or "none">
-- **Builder profile:** see `qanas/profile.md` (version <date>)
 
 ## Notes from the user
 <Anything else the user said that should steer research. Quote it; do not paraphrase. If there is none, write "none".>

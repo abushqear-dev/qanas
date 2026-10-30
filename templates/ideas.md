@@ -7,11 +7,11 @@ depends_on: 01-value-report.md
 
 # Idea List: <target>
 
-> **Pick one** idea, or say which ideas to combine. The ranking weighs five things: the need's strength, the gap existing products leave, your fit, how reachable the buyer is, and whether someone already pays. Scores are a sorting aid, not a forecast.
+> **Pick one** idea, or say which ideas to combine. The ranking weighs five things: the need's strength, the gap existing products leave, how buildable it is, how reachable the buyer is, and whether someone already pays. Scores are a sorting aid, not a forecast.
 
 ## Ranking
 
-| Rank | ID | Idea | Serves | Form | Need score | Gap | Fit | Reach | Money | Total | Evidence |
+| Rank | ID | Idea | Serves | Form | Need score | Gap | Build | Reach | Money | Total | Evidence |
 |------|----|------|--------|------|------------|-----|-----|-------|-------|-------|----------|
 | 1 | IDEA-1 | <name> | NEED-1 | SaaS | 5 | 4 | 4 | 3 | 4 | 20 | 13 |
 
@@ -39,11 +39,11 @@ depends_on: 01-value-report.md
 - **Scores:**
   - Need <n>: <reason>
   - Gap <n>: <reason>
-  - Fit <n>: <reason from the profile>
+  - Build <n>: <reason: licences, data, network or certification needed, or none>
   - Reach <n>: <reason>
   - Money <n>: <reason>
 - **Riskiest assumption:** <one line>
 - **Cheapest test (within two weeks):** <the test, and the result that would count as a pass>
 
 ## Considered and killed
-- **<idea>:** <one line on why: already solved by <product, URL>; a feature, not a product; nobody pays; moat; outside the profile>
+- **<idea>:** <one line on why: already solved by <product, URL>; a feature, not a product; nobody pays; moat; needs a day-one network>

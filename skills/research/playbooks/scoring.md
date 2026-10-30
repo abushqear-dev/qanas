@@ -72,12 +72,12 @@ Each axis is scored 1–5, with one line of reasoning each.
 |---|---|---|---|
 | **Need** | see formula above | see formula above | see formula above |
 | **Gap** | Crowded: several well-reviewed products already do this | Some: products exist but reviews show the gap | Open: no product found after searching in users' words |
-| **Fit** | Needs skills, money or forms the profile excludes | Partly within the profile | Squarely within the profile; a small team ships v1 in weeks |
-| **Reach** | No named channel, or paid ads only | A named channel that needs work to enter | A named channel the builder already has (a community, network or search they run) |
+| **Build** | Needs a licence, a certification, exclusive data or integrations, or day-one network liquidity | Buildable with common tools, but needs non-trivial data access or integrations | Buildable with common tools and public or easily obtained data; a useful first version in weeks |
+| **Reach** | No named channel, or paid ads only | A named channel that takes work to enter | A named channel where these buyers already gather and can be reached (a community, marketplace, search term or event) |
 | **Money** | No payer and no willingness-to-pay signal | Payer clear, price unproven | People already pay for a worse fix (a tool, a contractor, a salaried person) |
 
 The total is out of 25. Ties go to the idea whose need has higher confidence, because evidence is the dimension least likely to be wrong.
 
 **When nothing clears the floors,** that is a finding. A run whose needs are all Low confidence (Need score 2 at best) will rank no idea. The Idea List then says so on a line starting "No idea clears the floors", lists every idea under "Considered and killed", and the card offers the user the next step: reopen the needs gate to look for stronger evidence, with a list of the evidence that would help. No score is adjusted to make an idea rank, and the check refuses any Need score that departs from the formula.
 
-**Floors.** An idea ranks only if Need ≥ 3 and Gap ≥ 2 and its total is ≥ 15. Fit and Reach come from the builder profile, so they must not carry a weak need to the top: show **Evidence score** (Need + Gap + Money, out of 15) next to the total, and say so in the card when the top-ranked idea has a lower Evidence score than the runner-up.
+**Floors.** An idea ranks only if Need ≥ 3 and Gap ≥ 2 and its total is ≥ 15. Build and Reach describe the idea, not the evidence for the need, so they must not carry a weak need to the top: show **Evidence score** (Need + Gap + Money, out of 15) next to the total, and say so in the card when the top-ranked idea has a lower Evidence score than the runner-up.

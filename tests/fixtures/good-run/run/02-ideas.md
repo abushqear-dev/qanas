@@ -9,7 +9,7 @@ depends_on: 01-value-report.md
 
 ## Ranking
 
-| Rank | ID | Idea | Serves | Form | Need score | Gap | Fit | Reach | Money | Total | Evidence |
+| Rank | ID | Idea | Serves | Form | Need score | Gap | Build | Reach | Money | Total | Evidence |
 |------|----|------|--------|------|------------|-----|-----|-------|-------|-------|----------|
 | 1 | IDEA-1 | Solo compliant invoicing | NEED-1 | SaaS | 4 | 3 | 5 | 4 | 4 | 20 | 11 |
 
@@ -33,4 +33,4 @@ depends_on: 01-value-report.md
 - **Cheapest test (within two weeks):** a landing page in those groups; pass at 30 sign-ups.
 
 ## Considered and killed
-- **Marketplace for integrators:** outside the profile.
+- **Marketplace for integrators:** needs a day-one network of integrators.

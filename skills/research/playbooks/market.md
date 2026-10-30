@@ -24,7 +24,7 @@ Run all five by default. If the brief rules one out, say which and why. If a sou
 
 **Regional sources.** The list above leans toward the US and English. Qanas works in any country and language, so for the brief's region add local equivalents to each lane brief. Find them by searching for the source type in the country and language, for example `best freelance marketplaces in <country>`, `<category> forum <language>`, `<regulator> <country> official site`, plus the country's app-store reviews in the local language, classified and job sites, and news sites. Search in the local language as well as English, and tell scouts which languages to cover. Write reports in English and quote sources in their original language with a short English gloss.
 
-**Closed platforms.** X, Telegram, WhatsApp and Facebook groups are usually unreadable. Say so in the report's gaps. If the builder's profile says their audience lives there, offer the user a way in: "paste or export a few threads and I will add them as first-hand signals".
+**Closed platforms.** X, Telegram, WhatsApp and Facebook groups are usually unreadable. Say so in the report's gaps. If the brief suggests the audience lives there, offer the user a way in: "paste or export a few threads and I will add them as first-hand signals".
 
 ## 3. Shapes of a real need
 When you see one of these, dig in:

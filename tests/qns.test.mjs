@@ -21,7 +21,6 @@ function makeRun(gates = {}, type = 'market') {
   const base = fs.mkdtempSync(path.join(os.tmpdir(), 'qns-'));
   const dir = path.join(base, 'qanas', RUN);
   fs.mkdirSync(dir, { recursive: true });
-  fs.copyFileSync(path.join(fixture, 'profile.md'), path.join(base, 'qanas', 'profile.md'));
   for (const f of fs.readdirSync(path.join(fixture, 'run'))) fs.copyFileSync(path.join(fixture, 'run', f), path.join(dir, f));
   const state = { run: RUN, type, target: 't', stage: 0, gates: { brief: null, needs: null, idea: null, vision: null, ...gates }, picked: null, handoff: null };
   fs.writeFileSync(path.join(dir, 'state.json'), JSON.stringify(state));

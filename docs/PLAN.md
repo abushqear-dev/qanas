@@ -40,7 +40,7 @@ One batch of questions, each with a default:
 1. **Research type:** Market, Company or Individual.
 2. **Target:** the market (for example "independent dental clinics in the GCC"), the company (name plus website), or the person (name plus one disambiguating link).
 3. **Geography and time frame**, if they matter.
-4. **Builder profile**, saved once and reused: your skills, team size, budget, and the product forms you will and won't build (SaaS, mobile, service, marketplace, hardware). This is what keeps the ideas buildable by you.
+4. **Nothing about you.** Qanas judges opportunities on the evidence alone. It does not ask about your team, budget, skills or time. (Removed in v0.3; the first design had a builder profile.)
 5. **Exclusions:** sectors, business models, or anything you already ruled out.
 
 Output: `00-brief.md`.
@@ -81,7 +81,7 @@ Output: `01-value-report.md`. It holds a one-page summary, the top needs table (
 3. **Score** each surviving idea from 1 to 5 on five axes, with one line of reasoning each:
    - **Need strength:** taken from the need's opportunity score and confidence.
    - **Gap:** how poorly existing products cover it.
-   - **Fit:** how well it matches the builder profile from the brief.
+   - **Build:** how buildable it is in itself: no licence, exclusive data or day-one network needed.
    - **Reachability:** how easy it is to find and reach the buyer.
    - **Monetization:** whether there is a clear payer and evidence of willingness to pay.
 4. **Rank and present** 5–10 ideas. Each gets one line of pitch, the need it serves, who pays, its form, its score breakdown, its biggest risk, and the cheapest test (a landing page, five interviews, a concierge version).
@@ -102,8 +102,8 @@ Source: Qanas run <slug>, <date>
 ## The problem              (JOB-n and outcomes, with evidence links)
 ## What it must do          (exactly three core capabilities, plus a "later" list)
 ## Out of scope             (explicit list)
-## Hard constraints         (platform, budget, data, legal, from brief and research)
-## Why now and why us       (trend, regulation, builder fit)
+## Hard constraints         (platform, data, legal, from brief and research)
+## Why now                 (trend, regulation, market change)
 ## Success looks like       (2–4 measurable outcomes)
 ## Suggested Itqan scale    (one line of reasoning; Itqan still asks)
 ## Appendix A: Market evidence   (COMP-n table, needs table, cited and dated to Discovery's rules)
@@ -162,7 +162,6 @@ qanas/<yyyy-mm-dd>-<slug>/
   sources.md          # every URL with access date and the claims it backs
 ```
 
-The builder profile lives in `qanas/profile.md`. It is shared by all runs and asked for only once.
 
 **Research fan-out.** The research stage sends 3–5 `scout` subagents in parallel. They split by source family (reviews, communities, jobs, news and filings, trends). Each returns signals as `claim | quote | url | accessed | source-type`. This keeps raw pages out of the main context, so the main thread only clusters and scores.
 
@@ -185,7 +184,7 @@ You chose "anything public". Qanas will use any public source about the person's
 - health, religion, sexual orientation, political views, or other special-category data
 - financial details beyond what they publish about their business
 
-It also stores only what backs a need, with the source. The report states that it contains personal data, and the run can be deleted with `qanas:status --delete <run>`. Where data-protection laws (GDPR, CCPA and similar laws elsewhere) apply, a profile like this is personal data, so the guardrails keep it to what is necessary for the stated purpose.
+It also stores only what backs a need, with the source. The report states that it contains personal data, and the run can be deleted with `qanas:status --delete <run>`. Where data-protection laws (GDPR, CCPA and similar laws elsewhere) apply, a profile of a person is personal data, so the guardrails keep it to what is necessary for the stated purpose.
 
 ## 7. Build phases
 

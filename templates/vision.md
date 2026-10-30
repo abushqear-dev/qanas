@@ -23,7 +23,7 @@ Source: Qanas run <yyyy-mm-dd>-<slug>, <IDEA-n>, written <yyyy-mm-dd>.
 - <explicit exclusions>
 
 ## Hard constraints
-- <platform, language, region, budget, data and privacy, legal, integrations; from the brief, the profile and the research. Research-based constraints cite a source (the regulator's or platform's own specification where possible), or say "hypothesis: verify against <primary source>".>
+- <platform, language, region, data and privacy, legal, integrations; from the brief and the research. Research-based constraints cite a source (the regulator's or platform's own specification where possible), or say "hypothesis: verify against <primary source>".>
 
 ## Why now
 <Trend, regulation, technology or market change that opens the window, with sources.>

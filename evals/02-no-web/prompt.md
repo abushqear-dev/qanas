@@ -6,4 +6,4 @@ allowed_tools: [Read, Write, Edit, Glob, Grep, Bash, Skill]
 
 /qanas:start market "meal-prep delivery for gyms in Poland"
 
-Answers to your questions, so you do not need to ask: geography Poland, time frame last 12 months, no exclusions. My builder profile: solo TypeScript developer, time only, 10 hours a week, I will build SaaS and web apps, not hardware or marketplaces, I reach gym owners on Instagram, goal side income. Go straight to the research and produce the Value Report.
+Answers to your questions, so you do not need to ask: geography Poland, time frame last 12 months, no exclusions. Go straight to the research and produce the Value Report.

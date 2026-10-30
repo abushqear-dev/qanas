@@ -5,7 +5,7 @@ description: Stage 3 of Qanas. Writes a Vision Document for the idea the user pi
 
 # Stage 3: Vision Document
 
-Conventions: `${CLAUDE_PLUGIN_ROOT}/skills/start/conventions.md`. Template: `${CLAUDE_PLUGIN_ROOT}/templates/vision.md`. Inputs: the picked idea in `02-ideas.md`, the needs it serves in `01-value-report.md`, `sources.md`, `00-brief.md`, `qanas/profile.md`.
+Conventions: `${CLAUDE_PLUGIN_ROOT}/skills/start/conventions.md`. Template: `${CLAUDE_PLUGIN_ROOT}/templates/vision.md`. Inputs: the picked idea in `02-ideas.md`, the needs it serves in `01-value-report.md`, `sources.md`, `00-brief.md`.
 
 ## Why the format matters
 Itqan intake reads `docs/input/vision.md`. It needs: who it is for, the problem, the three things it must do, what is out of scope, and hard constraints.
@@ -20,8 +20,8 @@ Fill every template section from the inputs. Only what the inputs support; anyth
 - **Who it is for / The problem:** carry `PER-n` and `JOB-n` over from the Value Report in the same shape (role and context, top three pains, top three gains, source; job with outcome and source). Replace `S-n` with the URL and access date, so the Vision stands alone.
 - **What it must do:** exactly three capabilities that together make the idea's wedge, judged against the job's outcome. Everything beyond the wedge goes to "Later".
 - **Out of scope:** at least three explicit exclusions, including the obvious next features you deferred.
-- **Hard constraints:** from the brief (geography, exclusions), the profile (forms, budget, skills) and the research (regulation, platforms people already use). Every technical or legal constraint that comes from the research cites a source. Prefer the regulator's or platform's own specification over a secondary site. A constraint resting on one secondary domain says "hypothesis: verify against <the primary source>".
-- **Suggested Itqan scale:** Prototype to test the idea, Demo to show it, MVP for first real users, Full product to ship and keep. Pick from the profile's goal and the idea's cheapest test. Add one line saying which Itqan stages that scale runs, so the user knows whether Discovery will run. From Itqan 0.8 (`F` full, `L` lite, `-` skipped; check `itq.mjs scale list` in case it changed):
+- **Hard constraints:** from the brief (geography, exclusions) and the research (regulation, platforms people already use). Every technical or legal constraint that comes from the research cites a source. Prefer the regulator's or platform's own specification over a secondary site. A constraint resting on one secondary domain says "hypothesis: verify against <the primary source>".
+- **Suggested Itqan scale:** Prototype to test the idea, Demo to show it, MVP for first real users, Full product to ship and keep. Pick from the idea's cheapest test and how strong the evidence is: thin evidence suggests Prototype. Add one line saying which Itqan stages that scale runs, so the user knows whether Discovery will run. From Itqan 0.8 (`F` full, `L` lite, `-` skipped; check `itq.mjs scale list` in case it changed):
 
   | Scale | Discovery | Constitution | Spec | UX | Tech design | Plan | Build | Acceptance |
   |---|---|---|---|---|---|---|---|---|
@@ -45,7 +45,7 @@ Fill every template section from the inputs. Only what the inputs support; anyth
 - Every need in Appendix A at Medium or High confidence has two different domains in its sources. The rest say "hypothesis".
 - The feature matrix applies the 60% rule to the competitors listed, and says how many that is.
 - No hype words (revolutionary, seamless, cutting-edge, powerful, game-changing).
-- Nothing in the Vision contradicts the brief's exclusions or the profile.
+- Nothing in the Vision contradicts the brief's exclusions.
 
 ## 3. Gate: approve the Vision
 Write `03-vision.md`. Run `qns.mjs check <run> vision` and the `qanas:skeptic` agent as the conventions say ("Before every gate"). Show a card: the one-paragraph summary, the three capabilities, out of scope, the suggested scale and which stages it runs, the count of assumptions and open questions, and the riskiest assumption. Ask: "Do you approve this Vision? Reply approve, or tell me what to change." Only the user's own message in this session counts as approval.

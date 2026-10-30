@@ -234,7 +234,6 @@ const checks = {
     else if (type !== state.type) report.error(`00-brief.md says ${type} but state.json says ${state.type}.`);
     const target = /\*\*Target:\*\*\s*(.+)/i.exec(md)?.[1] ?? '';
     if (!target.trim() || placeholders(target).length) report.error('00-brief.md: "Target" is not filled in.');
-    if (!fs.existsSync(path.join(path.dirname(dir), 'profile.md'))) report.error('qanas/profile.md (builder profile) is missing.');
     const head = md.split(/^## Comparable rule/m)[0].split(/^## Framing/m)[0];
     const ph = placeholders(head);
     if (ph.length) report.error(`00-brief.md: unfilled placeholders: ${ph.slice(0, 5).join(', ')}.`);
@@ -307,7 +306,7 @@ const checks = {
     const vr = read(dir, '01-value-report.md') || '';
     const confirmed = new Set(/^Confirmed for ideas:(.*)$/m.exec(vr)?.[1]?.match(/NEED-\d+/g) ?? []);
     if (!confirmed.size) report.error('01-value-report.md: the "Confirmed for ideas" line lists no NEED ids.');
-    const t = table(md, ['rank', 'id', 'idea', 'serves', 'need score', 'gap', 'fit', 'reach', 'money', 'total', 'evidence']);
+    const t = table(md, ['rank', 'id', 'idea', 'serves', 'need score', 'gap', 'build', 'reach', 'money', 'total', 'evidence']);
     if (!t) return report.error('02-ideas.md: the Ranking table is missing or its header changed.');
     const rows = t.rows.filter((r) => /^IDEA-\d+$/.test(col(r, 'id')));
     if (!rows.length) {
@@ -329,9 +328,9 @@ const checks = {
       const id = col(r, 'id');
       if (seenIdeas.has(id)) report.error(`${id} is defined twice in the ranking.`);
       seenIdeas.add(id);
-      const v = Object.fromEntries(['need score', 'gap', 'fit', 'reach', 'money', 'total', 'evidence'].map((k) => [k, int(col(r, k))]));
-      for (const k of ['need score', 'gap', 'fit', 'reach', 'money']) if (v[k] === null || v[k] < 1 || v[k] > 5) report.error(`${id}: ${k} must be 1-5.`);
-      const sum = v['need score'] + v.gap + v.fit + v.reach + v.money;
+      const v = Object.fromEntries(['need score', 'gap', 'build', 'reach', 'money', 'total', 'evidence'].map((k) => [k, int(col(r, k))]));
+      for (const k of ['need score', 'gap', 'build', 'reach', 'money']) if (v[k] === null || v[k] < 1 || v[k] > 5) report.error(`${id}: ${k} must be 1-5.`);
+      const sum = v['need score'] + v.gap + v.build + v.reach + v.money;
       if (v.total !== sum) report.error(`${id}: Total is ${v.total}, but the axes add up to ${sum}.`);
       const ev = v['need score'] + v.gap + v.money;
       if (v.evidence !== ev) report.error(`${id}: Evidence is ${v.evidence}, but Need score + Gap + Money = ${ev}.`);

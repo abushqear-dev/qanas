@@ -12,7 +12,6 @@ status: draft
 - **Geography:** Germany
 - **Time frame:** last 12 months
 - **Exclusions:** none
-- **Builder profile:** see `qanas/profile.md` (version 2026-10-01)
 
 ## Notes from the user
 none

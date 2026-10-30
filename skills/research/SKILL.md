@@ -5,7 +5,7 @@ description: Stage 1 of Qanas. Researches the brief's market, company or person 
 
 # Stage 1: Research → Value Report
 
-Conventions: `${CLAUDE_PLUGIN_ROOT}/skills/start/conventions.md`. Template: `${CLAUDE_PLUGIN_ROOT}/templates/value-report.md`. Inputs: the run's `00-brief.md` and `qanas/profile.md`.
+Conventions: `${CLAUDE_PLUGIN_ROOT}/skills/start/conventions.md`. Template: `${CLAUDE_PLUGIN_ROOT}/templates/value-report.md`. Input: the run's `00-brief.md`.
 
 ## 0. Check the tools
 If WebSearch or WebFetch is not available, say so and stop. Do not research from memory.

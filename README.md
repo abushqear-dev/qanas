@@ -5,7 +5,7 @@ Qanas (قنّاص, "the hunter") is a Claude Code plugin that hunts for unmet ne
 Give it a **market**, a **company** or an **individual**. It returns:
 
 1. **A Value Report.** This lists the needs they have and lack, each backed by cited, dated evidence and scored.
-2. **An Idea List.** This holds up to 10 product ideas that would deliver that value, ranked against your builder profile, with a list of the ideas it killed and why.
+2. **An Idea List.** This holds up to 10 product ideas that would deliver that value, ranked on the strength of the evidence, with a list of the ideas it killed and why.
 3. **A Vision Document** for the idea you pick. It is written to `docs/input/vision.md` and ready for [Itqan](https://github.com/abushqear-dev/itqan).
 
 ```
@@ -15,7 +15,7 @@ Brief ──► Value Report ──► Idea List ──► Vision Document ─�
 
 ## Status
 
-Version 0.2.0. Market, Company and Individual research all work. See [docs/PLAN.md](docs/PLAN.md) for the design.
+Version 0.3.0. Market, Company and Individual research all work. See [docs/PLAN.md](docs/PLAN.md) for the design.
 
 ## Install
 
@@ -40,7 +40,7 @@ claude --plugin-dir ./Qanas
 
 Or run `/qanas:start` with no argument and answer the brief.
 
-Each run lives in `qanas/<date>-<slug>/` under the folder you start from. Your builder profile (skills, budget, the product forms you will build) is in `qanas/profile.md` and is reused across runs.
+Each run lives in `qanas/<date>-<slug>/` under the folder you start from. Qanas judges opportunities on the evidence alone. It does not ask about your team, budget, skills or time.
 
 Qanas stops for you at four gates: the brief, the needs, the idea, and the Vision. Before each gate it runs mechanical checks (`scripts/qns.mjs`) and an independent skeptic agent that re-fetches a sample of the cited pages. A hook blocks writing a stage's file before the earlier gate is passed, and editing a file once its gate is passed.
 

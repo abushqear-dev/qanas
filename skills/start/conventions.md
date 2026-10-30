@@ -4,7 +4,6 @@
 
 ```
 qanas/
-  profile.md                     builder profile, shared by every run
   <yyyy-mm-dd>-<slug>/           one folder per run
     state.json                   owned by qns.mjs
     00-brief.md
