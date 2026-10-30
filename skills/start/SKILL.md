@@ -26,7 +26,7 @@ Support skills: `qanas:status` (runs and deletion), `qanas:refresh` (bring an ol
 1. **Find the run.**
    - If the user's message names a type and target (e.g. `/qanas:start company "Acme Logistics, acme.example"`), start a new run with them through `qanas:brief`.
    - Otherwise run `qns.mjs list`. If there are unfinished runs, show them and ask whether to resume one or start a new one. If there are none, start a new run.
-2. **Report where things stand** in one line, e.g. "Run 2026-10-30-ksa-freelance-invoicing, stage 1 of 3, Research."
+2. **Report where things stand** in one line, naming the step out of four (Brief, Research, Ideas, Vision), e.g. "Run 2026-10-30-ksa-freelance-invoicing, step 2 of 4, Research."
 3. **Run the stage's skill.** Resume at the first stage whose gate is not passed (`qns.mjs status <run>`).
 4. **Stop at each gate.** Only the user, typed in this session, passes a gate.
 
