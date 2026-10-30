@@ -1,0 +1,12 @@
+{
+  "name": "qanas-plugins",
+  "description": "Qanas: find needed value, turn it into product ideas, hand the chosen one to Itqan.",
+  "owner": { "name": "Mohammed Abu-Shqear" },
+  "plugins": [
+    {
+      "name": "qanas",
+      "source": "./",
+      "description": "Market, company or individual research to evidence-backed needs, ranked ideas and an Itqan-ready Vision Document."
+    }
+  ]
+}
