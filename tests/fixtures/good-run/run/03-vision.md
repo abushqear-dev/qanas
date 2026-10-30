@@ -1,8 +1,8 @@
-# Vision: Fatoora Solo (working name)
+# Vision: Invoice Solo (working name)
 
 Source: Qanas run 2026-10-30-test-run, IDEA-1, written 2026-10-30.
 
-Fatoora Solo lets a Saudi freelancer issue a compliant invoice in two minutes.
+Invoice Solo lets a German freelancer issue a compliant invoice in two minutes.
 
 ## Who it is for
 - **PER-1 Solo freelancer:** designer or developer; top three pains: manual invoices, portal setup, slow support; top three gains: speed, compliance, low cost. Primary user and buyer. Source: https://forum.example.com/t/1 (2026-10-30).
@@ -23,7 +23,7 @@ Fatoora Solo lets a Saudi freelancer issue a compliant invoice in two minutes.
 - Mobile apps
 
 ## Hard constraints
-- Arabic first. Source: https://forum.example.com/t/1 (2026-10-30).
+- German and English interface. Source: https://forum.example.com/t/1 (2026-10-30).
 
 ## Why now
 A reporting deadline is coming (https://alpha.example.net/pricing, 2026-10-30).

@@ -4,4 +4,4 @@ max_turns: 12
 allowed_tools: [Read, Write, Edit, Glob, Grep, Bash, Skill, AskUserQuestion]
 ---
 
-/qanas:start market "online bookkeeping for freelancers in Egypt"
+/qanas:start market "online bookkeeping for freelancers in Brazil"

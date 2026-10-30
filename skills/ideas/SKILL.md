@@ -7,7 +7,7 @@ description: Stage 2 of Qanas. Turns the confirmed needs from the Value Report i
 
 Conventions: `${CLAUDE_PLUGIN_ROOT}/skills/start/conventions.md`. Template: `${CLAUDE_PLUGIN_ROOT}/templates/ideas.md`. Scoring: `${CLAUDE_PLUGIN_ROOT}/skills/research/playbooks/scoring.md`. Inputs: `01-value-report.md` (only the needs confirmed for ideas), `sources.md`, `qanas/profile.md` and `00-brief.md`.
 
-Every idea starts from a confirmed need and its signals. An idea that cannot be traced back to a dated signal someone could click does not belong on the list. Specific beats ambitious: "Automated VAT-return prep for Shopify sellers in the Gulf" is an idea, while "AI for accounting" is a horoscope.
+Every idea starts from a confirmed need and its signals. An idea that cannot be traced back to a dated signal someone could click does not belong on the list. Specific beats ambitious: "Automated VAT-return prep for Shopify sellers in the EU" is an idea, while "AI for accounting" is a horoscope.
 
 ## 1. Diverge
 For each confirmed need, write 3–5 ideas in **different forms**:

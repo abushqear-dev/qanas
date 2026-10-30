@@ -4,12 +4,12 @@ stage: brief
 status: draft
 ---
 
-# Brief: Invoicing for freelancers in Saudi Arabia
+# Brief: Invoicing for freelancers in Germany
 
 - **Research type:** Market
-- **Target:** Invoicing and e-invoicing compliance for freelancers in Saudi Arabia
+- **Target:** Invoicing and e-invoicing compliance for freelancers in Germany
 - **Lens:** their unmet need. Ideas are products you could build and sell to them, or to others like them.
-- **Geography:** Saudi Arabia
+- **Geography:** Germany
 - **Time frame:** last 12 months
 - **Exclusions:** none
 - **Builder profile:** see `qanas/profile.md` (version 2026-10-01)
@@ -18,6 +18,6 @@ status: draft
 none
 
 ## Comparable rule
-- **Rule:** every product named in the results of `best invoicing software Saudi Arabia` and `ZATCA e-invoicing software for small business`.
+- **Rule:** every product named in the results of `best invoicing software Germany` and `e-invoicing software for small business Germany`.
 - **Caught list:** Alpha Books, Beta Invoice, Gamma ERP
 - **Caught 3, shown 3.** Departures from the rule: none.

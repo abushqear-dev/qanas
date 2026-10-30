@@ -114,7 +114,7 @@ Then you approve it, and it is written to `<product folder>/docs/input/vision.md
 
 ### Support skills
 
-- `qanas:start`: the router. It reads the run state, resumes at the first unfinished stage, and accepts a shortcut such as `/qanas:start market "B2B invoicing for freelancers in KSA"`.
+- `qanas:start`: the router. It reads the run state, resumes at the first unfinished stage, and accepts a shortcut such as `/qanas:start market "B2B invoicing for freelancers in Germany"`.
 - `qanas:status`: lists runs and where each one stands.
 - `qanas:refresh`: re-checks a past run's sources and dates before its Vision is used, because evidence older than 90 days fails Itqan Discovery.
 
@@ -185,7 +185,7 @@ You chose "anything public". Qanas will use any public source about the person's
 - health, religion, sexual orientation, political views, or other special-category data
 - financial details beyond what they publish about their business
 
-It also stores only what backs a need, with the source. The report states that it contains personal data, and the run can be deleted with `qanas:status --delete <run>`. Where data-protection laws (GDPR, Saudi PDPL) apply, a profile like this is personal data, so the guardrails keep it to what is necessary for the stated purpose.
+It also stores only what backs a need, with the source. The report states that it contains personal data, and the run can be deleted with `qanas:status --delete <run>`. Where data-protection laws (GDPR, CCPA and similar laws elsewhere) apply, a profile like this is personal data, so the guardrails keep it to what is necessary for the stated purpose.
 
 ## 7. Build phases
 

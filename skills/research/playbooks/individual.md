@@ -11,7 +11,7 @@ The user chose "anything public" as the source rule. That covers any public page
 
 Record only what backs a need, with its source. Quote the person only on their work, goals, tools and problems. If a page mixes allowed and excluded content, take only the allowed part.
 
-The report starts with the line "Contains personal data about <name>, from public sources, for <purpose from the brief>." Data-protection laws (GDPR, Saudi PDPL and others) treat a profile like this as personal data, so it holds only what the stated purpose needs.
+The report starts with the line "Contains personal data about <name>, from public sources, for <purpose from the brief>." Data-protection laws (GDPR, CCPA and similar laws elsewhere) treat a profile like this as personal data, so it holds only what the stated purpose needs.
 
 ## 1. Frame the person
 Write four lines and save them in `00-brief.md` under "Framing":

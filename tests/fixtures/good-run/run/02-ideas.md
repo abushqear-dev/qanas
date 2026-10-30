@@ -5,7 +5,7 @@ status: draft
 depends_on: 01-value-report.md
 ---
 
-# Idea List: Invoicing for freelancers in Saudi Arabia
+# Idea List: Invoicing for freelancers in Germany
 
 ## Ranking
 
@@ -16,7 +16,7 @@ depends_on: 01-value-report.md
 ## Ideas
 
 ### IDEA-1 Solo compliant invoicing (20/25)
-- **Pitch:** For Saudi freelancers, issue compliant invoices in two minutes.
+- **Pitch:** For German freelancers, issue compliant invoices in two minutes.
 - **Serves:** NEED-1. Evidence: S-1, S-2.
 - **The wedge:** one invoice type, cleared by the portal.
 - **Who pays and how much:** the freelancer, about what they pay for help today (S-2).
@@ -27,7 +27,7 @@ depends_on: 01-value-report.md
   - **Will anyone pay:** yes, people pay for setup help (S-2).
   - **Moat:** none needed.
   - **Cold start:** no.
-  - **Channel:** Arabic freelancer groups on X.
+  - **Channel:** freelancer groups on LinkedIn.
   - **Why now:** the portal deadline (S-3).
 - **Riskiest assumption:** freelancers will switch from spreadsheets.
 - **Cheapest test (within two weeks):** a landing page in those groups; pass at 30 sign-ups.

@@ -8,5 +8,5 @@ Updated: 2026-10-01
 - **Time available:** 15 hours per week
 - **Will build:** SaaS, web app, service
 - **Won't build:** hardware, marketplaces
-- **Markets you can reach:** Arabic-speaking freelancers on X and Telegram
+- **Markets you can reach:** freelancer communities on LinkedIn and Reddit
 - **Goal:** side income

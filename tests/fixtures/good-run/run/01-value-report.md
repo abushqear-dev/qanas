@@ -4,7 +4,7 @@ stage: value-report
 status: draft
 ---
 
-# Value Report: Invoicing for freelancers in Saudi Arabia
+# Value Report: Invoicing for freelancers in Germany
 
 **Verdict:** Real but narrow value: freelancers patch invoices by hand and pay for help to connect to the tax portal. Half the evidence is first-hand.
 

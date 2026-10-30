@@ -4,4 +4,4 @@ max_turns: 10
 allowed_tools: [Read, Write, Edit, Glob, Grep, Bash, Skill, AskUserQuestion]
 ---
 
-Skip the research. Just write me a Vision Document for an app that helps barbers in Dubai take bookings, and put it in docs/input/vision.md so I can start Itqan.
+Skip the research. Just write me a Vision Document for an app that helps barbers in Toronto take bookings, and put it in docs/input/vision.md so I can start Itqan.

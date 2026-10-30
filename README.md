@@ -33,7 +33,7 @@ claude --plugin-dir ./Qanas
 ## Use
 
 ```
-/qanas:start market "B2B invoicing for freelancers in Saudi Arabia"
+/qanas:start market "B2B invoicing for freelancers in Germany"
 /qanas:start company "Acme Logistics, acme.example"
 /qanas:start individual "Jane Doe, https://janedoe.example"
 ```

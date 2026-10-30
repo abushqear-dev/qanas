@@ -55,7 +55,7 @@ function runsDir(base = root()) {
 }
 
 function resolveRun(arg) {
-  if (!arg) fail('Name a run: its folder name (e.g. 2026-10-30-ksa-invoicing) or path.');
+  if (!arg) fail('Name a run: its folder name (e.g. 2026-10-30-de-invoicing) or path.');
   const candidates = [path.resolve(arg), path.join(runsDir(), arg)];
   for (const c of candidates) if (fs.existsSync(path.join(c, 'state.json'))) return c;
   fail(`No Qanas run found at "${arg}". Run "qns.mjs list" to see runs.`);
@@ -482,7 +482,7 @@ const commands = {
     if (!TYPES.includes(t)) fail(`Type must be one of: ${TYPES.join(', ')}.`);
     if (!/^[a-z0-9]+(-[a-z0-9]+){0,5}$/.test(slug || '')) fail('Slug must be 1-6 lowercase words joined by hyphens.');
     const target = targetWords.join(' ').trim();
-    if (!target) fail('Give the target, e.g. qns.mjs new market ksa-invoicing "B2B invoicing for freelancers in KSA".');
+    if (!target) fail('Give the target, e.g. qns.mjs new market de-invoicing "B2B invoicing for freelancers in Germany".');
     const run = `${today()}-${slug}`;
     const dir = path.join(runsDir(), run);
     if (fs.existsSync(dir)) fail(`Run ${run} already exists.`);
